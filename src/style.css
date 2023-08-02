@@ -31,3 +31,11 @@
 #bmi-form .bmi-row {
     margin-bottom: 20px;
 }
+img {
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 4px;
+    width: 280px;
+    height: 180px;
+    margin: 23px;
+}

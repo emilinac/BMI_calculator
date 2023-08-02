@@ -13,18 +13,18 @@ function measureBMI () {
 
     if (unit) {
         weightUnit.innerHTML = "KG";
-        weight.min = 1; weight.max = 635;
+        weight.min = 1; weight.max = 362;
         heightUnit.innerHTML = "CM";
-        height.min = 54; height.max = 272;
+        height.min = 50; height.max = 215;
     } else {
         weightUnit.innerHTML = "LBS";
-        weight.min = 2; weight.max = 1400;
+        weight.min = 10; weight.max = 800;
         heightUnit.innerHTML = "IN";
-        height.min = 21; height.max = 107;
+        height.min = 20; height.max = 85;
     }
 }
 function calcBMI () {
-    let bmi = null,
+    let bmi,
         unit = document.getElementById("bmi-metric").checked,
         weight = parseInt(document.getElementById("bmi-weight").value),
         height = parseInt(document.getElementById("bmi-height").value),
@@ -46,13 +46,11 @@ function calcBMI () {
     } else if (bmi < 25) {
         results.innerHTML = bmi + " - Normal weight";
     } else if (bmi < 30) {
-        results.innerHTML = bmi + " - Pre-obesity";
+        results.innerHTML = bmi + " - Overweight";
     } else if (bmi < 35) {
-        results.innerHTML = bmi + " - Obesity class I";
-    } else if (bmi < 40) {
-        results.innerHTML = bmi + " - Obesity class II";
+        results.innerHTML = bmi + " - Obese";
     } else {
-        results.innerHTML = bmi + " - Obesity class III";
+        results.innerHTML = bmi + " - Extremely Obese";
     }
     return false;
 }

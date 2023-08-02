@@ -21,16 +21,17 @@
         Weight (<span id="bmi-weight-unit">KG</span>):
     </div>
     <div class="bmi-row">
-        <input id="bmi-weight" type="number" min="1" max="635" required>
+        <label for="bmi-weight"></label><input id="bmi-weight" type="number" min="1" max="635" required>
     </div>
 
     <div class="bmi-label">Height (<span id="bmi-height-unit">CM</span>):</div>
     <div class="bmi-row">
-        <input id="bmi-height" type="number" min="54" max="272" required>
+        <label for="bmi-height"></label><input id="bmi-height" type="number" min="54" max="272" required>
     </div>
 
     <input type="submit" value="Calculate BMI">
     <span id="bmi-results"></span>
+    <img src="bmi.jpg" alt="BMI">
 </form>
 
 <script type="text/javascript" src="BMI.js"></script>
